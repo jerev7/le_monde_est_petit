@@ -1,6 +1,20 @@
+import program.world as script
+
+def hello(name):
+	return "Hello " + name
+
+def test_hello():
+	assert hello('Jeremie') == "Hello Jeremie"
+
+
+
+
 # - Agent : 
 #   - modifier un attribut position
 #   - récupérer un attribut position
+def test_get_position():
+	agent = script.Agent(30)
+	assert agent.position == 30
 #   - assigner un dictionnaire en tant qu'attributs
 
 # - Position :
